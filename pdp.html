@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product | Gopalsons Sanitary Store</title>
+  <meta name="description" content="Product details at Gopalsons Sanitary Store, Kashiram Nagar, Moradabad." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Gopalsons — go to homepage">
+        <div class="nav-logo" aria-hidden="true">G</div>
+        <div class="nav-brand-text">
+          <span class="nav-title">Gopalsons</span>
+          <span class="nav-subtitle">SANITARY STORE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">Why Choose Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="tel:+917599295513" class="btn btn-primary nav-cta">
+        <span aria-hidden="true">📞</span> Call Us
+      </a>
+
+      <button
+        class="nav-hamburger"
+        id="navHamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navDrawer"
+      >☰</button>
+    </nav>
+
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <ul class="nav-drawer-links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">Why Choose Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <a href="tel:+917599295513" class="btn btn-primary drawer-cta">📞 Call Us</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: var(--nav-height);">
+
+    <!-- Breadcrumb -->
+    <div class="plp-breadcrumb-bar">
+      <div class="plp-breadcrumb-inner">
+        <a href="index.html">Home</a>
+        <span class="plp-breadcrumb-sep" aria-hidden="true">/</span>
+        <a href="#" id="pdpBreadcrumbCat">Category</a>
+        <span class="plp-breadcrumb-sep" aria-hidden="true">/</span>
+        <span id="pdpBreadcrumbProduct">Product</span>
+      </div>
+    </div>
+
+    <!-- PDP Hero: image left, details right -->
+    <section class="pdp-hero" aria-labelledby="pdpProductName">
+      <div class="pdp-hero-container">
+
+        <!-- Image panel -->
+        <div class="pdp-img-panel">
+          <div class="pdp-img-wrap">
+            <img
+              id="pdpImage"
+              src=""
+              alt=""
+              class="pdp-main-img"
+              loading="eager"
+            />
+          </div>
+          <!-- Availability badge -->
+          <div class="pdp-badge-row">
+            <span class="pdp-badge pdp-badge-available">✅ In Stock</span>
+            <span class="pdp-badge pdp-badge-isi">🏅 ISI Quality</span>
+          </div>
+        </div>
+
+        <!-- Details panel -->
+        <div class="pdp-details-panel">
+          <p class="section-label" id="pdpCategoryLabel"></p>
+          <h1 id="pdpProductName"></h1>
+          <p class="pdp-description" id="pdpDescription"></p>
+
+          <!-- Specs list -->
+          <div class="pdp-specs" id="pdpSpecs">
+            <h2 class="pdp-specs-heading">Product Highlights</h2>
+            <ul class="pdp-specs-list" id="pdpSpecsList" role="list"></ul>
+          </div>
+
+          <!-- CTA group -->
+          <div class="pdp-cta-group">
+            <a href="index.html#contact" class="btn btn-primary btn-lg">
+              <span aria-hidden="true">📋</span> Enquire Now
+            </a>
+            <a href="tel:+917599295513" class="btn btn-outline btn-lg">
+              <span aria-hidden="true">📞</span> Call to Order
+            </a>
+          </div>
+
+          <!-- Store note -->
+          <div class="pdp-store-note">
+            <span aria-hidden="true">📍</span>
+            <span>Available at our store: <strong>Samrat Ashok Nagar, Kashiram Nagar, Moradabad</strong></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Buy section -->
+    <section class="pdp-trust-bar" aria-label="Why buy from Gopalsons">
+      <div class="pdp-trust-inner">
+        <div class="pdp-trust-item">
+          <span aria-hidden="true">🏅</span>
+          <div>
+            <strong>Quality Assured</strong>
+            <p>Only ISI and professionally certified brands</p>
+          </div>
+        </div>
+        <div class="pdp-trust-item">
+          <span aria-hidden="true">💬</span>
+          <div>
+            <strong>Expert Advice</strong>
+            <p>Our staff helps you pick the right product</p>
+          </div>
+        </div>
+        <div class="pdp-trust-item">
+          <span aria-hidden="true">📍</span>
+          <div>
+            <strong>Local Availability</strong>
+            <p>Fully stocked, walk in anytime Mon–Sat</p>
+          </div>
+        </div>
+        <div class="pdp-trust-item">
+          <span aria-hidden="true">📞</span>
+          <div>
+            <strong>Call to Reserve</strong>
+            <p><a href="tel:+917599295513">+91 75992 95513</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related products -->
+    <section class="pdp-related" aria-labelledby="pdpRelatedHeading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-label">✦ More from this category</p>
+          <h2 id="pdpRelatedHeading">Related Products</h2>
+        </div>
+        <div class="products-grid" id="pdpRelatedGrid"></div>
+        <div class="pdp-related-cta">
+          <a href="#" id="pdpViewAllLink" class="btn btn-outline">
+            View all in this category →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-hidden="true">G</div>
+        <div class="footer-brand-text">
+          <span class="footer-name">Gopalsons Sanitary Store</span>
+          <span class="footer-tagline">Kashiram, Moradabad, UP. Serving the community with quality hardware.</span>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <p class="footer-nav-heading">Additional Links</p>
+        <ul role="list">
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#about">Why Choose Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#admin">⚙ Manage Products</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Gopalsons. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="pdp.js"></script>
+</body>
+</html>

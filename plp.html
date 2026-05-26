@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Gopalsons Sanitary Store</title>
+  <meta name="description" content="Browse our range of sanitary products at Gopalsons, Kashiram Nagar, Moradabad. Quality taps, pipes, bathroom fixtures, tanks and more." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation (same structure as index.html, links point back to index) -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Gopalsons — go to homepage">
+        <div class="nav-logo" aria-hidden="true">G</div>
+        <div class="nav-brand-text">
+          <span class="nav-title">Gopalsons</span>
+          <span class="nav-subtitle">SANITARY STORE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">Why Choose Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="tel:+917599295513" class="btn btn-primary nav-cta">
+        <span aria-hidden="true">📞</span> Call Us
+      </a>
+
+      <button
+        class="nav-hamburger"
+        id="navHamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navDrawer"
+      >☰</button>
+    </nav>
+
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <ul class="nav-drawer-links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">Why Choose Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <a href="tel:+917599295513" class="btn btn-primary drawer-cta">
+            📞 Call Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: var(--nav-height);">
+
+    <!-- Breadcrumb bar -->
+    <div class="plp-breadcrumb-bar">
+      <div class="plp-breadcrumb-inner">
+        <a href="index.html">← Home</a>
+        <span class="plp-breadcrumb-sep" aria-hidden="true">/</span>
+        <span id="plpBreadcrumbCat">Products</span>
+      </div>
+    </div>
+
+    <!-- Category hero -->
+    <section class="plp-hero" aria-labelledby="plpHeading">
+      <div class="plp-hero-container">
+        <div class="plp-hero-text">
+          <p class="section-label" id="plpLabel">✦ Products</p>
+          <h1 id="plpHeading">Category</h1>
+          <p class="plp-hero-desc" id="plpDesc"></p>
+          <a href="index.html#contact" class="btn btn-primary" style="margin-top:24px;">
+            📞 Enquire Now
+          </a>
+        </div>
+        <div class="plp-hero-img-wrap" aria-hidden="true">
+          <img id="plpHeroImg" src="" alt="" class="plp-hero-img" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Products grid -->
+    <section class="plp-grid-section" aria-labelledby="plpGridHeading">
+      <div class="section-container">
+
+        <div class="plp-grid-toolbar">
+          <h2 id="plpGridHeading" class="sr-only">Product listings</h2>
+          <p class="plp-count" id="plpCount"></p>
+          <a href="index.html#contact" class="btn btn-outline btn-sm">
+            📋 Request a Quote
+          </a>
+        </div>
+
+        <div class="products-grid" id="plpGrid"></div>
+
+        <div id="plpEmpty" class="plp-empty" hidden>
+          <p>No products found in this category.</p>
+          <a href="index.html" class="btn btn-primary" style="margin-top:24px;">
+            ← Back to Home
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Back to all products banner -->
+    <div class="plp-back-banner">
+      <div class="plp-back-inner">
+        <p>Looking for something else?</p>
+        <a href="index.html#products" class="btn btn-outline">← Browse All Categories</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-hidden="true">G</div>
+        <div class="footer-brand-text">
+          <span class="footer-name">Gopalsons Sanitary Store</span>
+          <span class="footer-tagline">Kashiram, Moradabad, UP. Serving the community with quality hardware.</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <p class="footer-nav-heading">Additional Links</p>
+        <ul role="list">
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#about">Why Choose Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#admin">⚙ Manage Products</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Gopalsons. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="plp.js"></script>
+</body>
+</html>
