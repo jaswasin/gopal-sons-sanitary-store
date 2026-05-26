@@ -348,6 +348,9 @@ button {
   flex-shrink: 0;
 }
 
+.nav-cta-mobile { display: none; }
+.nav-cta-desktop { display: inline; }
+
 /* Hamburger */
 .nav-hamburger {
   display: none;
@@ -511,6 +514,97 @@ button {
   border-color: #ffffff;
   color: #ffffff;
   box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* =============================================================
+   BRANDS SECTION
+   ============================================================= */
+#brands {
+  background: #f8fafc;
+  border-top: 1px solid #e8edf4;
+  border-bottom: 1px solid #e8edf4;
+  padding: 32px 0;
+  overflow: hidden;
+}
+
+.brands-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.brands-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.brands-track-wrap {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.brands-track {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: max-content;
+  animation: brandScroll 32s linear infinite;
+}
+
+@keyframes brandScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.brands-track:hover {
+  animation-play-state: paused;
+}
+
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 14px 28px;
+  height: 72px;
+  min-width: 140px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.brand-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  transform: translateY(-2px);
+}
+
+.brand-logo {
+  max-width: 110px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(40%) opacity(0.75);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+/* SVG wordmark logos can render at full width */
+.brand-logo.svg-logo {
+  max-width: 140px;
+  max-height: 52px;
+}
+
+.brand-card:hover .brand-logo {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
 }
 
 /* =============================================================
